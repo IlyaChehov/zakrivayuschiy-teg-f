@@ -155,7 +155,7 @@
 }
 
 .card__filter-2 {
-  filter: blur(0.4rem);
+  filter: blur(0.1rem);
 }
 
 .card__filter-3 {
@@ -207,6 +207,7 @@
 
 .card__images-img {
   width: 100%;
+  min-block-size: 696px;
   object-fit: cover;
   object-position: center;
 }
@@ -414,6 +415,7 @@
 
   .card__images-img {
     max-inline-size: 371px;
+    min-block-size: 371px;
   }
 
   html.theme-dark .card__text {
