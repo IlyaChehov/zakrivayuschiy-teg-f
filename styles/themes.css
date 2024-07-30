@@ -1,6 +1,167 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --main-color: #000;
+  --accent-color: #fff;
+  --text-outline: var(--accent-color);
+  --opacity: 0.6;
+  --main-color-button: var(--accent-color);
+
+  --contour-color: var(--main-color);
+  --main-body-color: var(--accent-color);
+  --core-color: var(--accent-color);
+  --sparks-color: #FF0000;
+  --color-footer-svg: var(--main-body-color);
+
+  --maif-fonts: "PressStart2P";
+  --accent-fonts: "Inter-Variable";
+  --weight-text: 400;
+  --weight-text-title: 700;
+
+  --container-width: 700px;
+
+  --border: 2px solid var(--main-color);
+  --shadow: 2px 2px 0 0 var(--main-color);
+
+  --transition: 0.3s ease;
+
+  --background-gradient-right: 
+  repeating-linear-gradient(to right,
+  rgb(0 0 0 / 0%) 0,
+  #d3d3d3 2px,
+  rgb(0 0 0 / 0%) 4px
+  );
+  --background-gradient-linear: 
+    linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a);
+  --background-gradient-bottom: 
+    repeating-linear-gradient(to bottom,
+    rgb(0 0 0 / 0%) 0,
+    #d3d3d3 2px,
+    rgb(0 0 0 / 0%) 4px
+  );
+}
+
+@media(prefers-color-scheme:light) {
+  :root {
+    --main-color: #000;
+    --accent-color: #fff;
+    --text-outline: var(--accent-color);
+    --opacity: 0.6;
+    --main-color-button: var(--accent-color);
+
+    --contour-color: var(--main-color);
+    --main-body-color: var(--accent-color);
+    --core-color: var(--accent-color);
+    --sparks-color: #FF0000;
+    --color-footer-svg: var(--main-body-color);
+  
+    --maif-fonts: "PressStart2P";
+    --accent-fonts: "Inter-Variable";
+    --weight-text: 400;
+    --weight-text-title: 700;
+  
+    --container-width: 700px;
+  
+    --border: 2px solid var(--main-color);
+    --shadow: 2px 2px 0 0 var(--main-color);
+  
+    --transition: 0.3s ease;
+
+    --background-gradient-right: 
+    repeating-linear-gradient(to right,
+    rgb(0 0 0 / 0%) 0,
+    #d3d3d3 2px,
+    rgb(0 0 0 / 0%) 4px
+    );
+    --background-gradient-linear: 
+      linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a);
+    --background-gradient-bottom: 
+      repeating-linear-gradient(to bottom,
+      rgb(0 0 0 / 0%) 0,
+      #d3d3d3 2px,
+      rgb(0 0 0 / 0%) 4px
+    );
+  }
+}
+
+:root.theme-dark {
+  --main-color: #00CC14;
+  --accent-color: #000;
+  --text-outline: var(--accent-color);
+  --opacity: 0.6;
+  --main-color-button: var(--main-color);
+
+  --contour-color: var(--main-color);
+  --main-body-color: var(--accent-color);
+  --core-color: var(--accent-color);
+  --sparks-color: #FF0000;
+  --color-footer-svg: var(--main-body-color);
+
+  --maif-fonts: "PressStart2P";
+  --accent-fonts: "Inter-Variable";
+  --weight-text: 465;
+  --weight-text-title: 785;
+
+  --container-width: 700px;
+
+  --border: 2px solid var(--main-color);
+  --shadow: 2px 2px 0 0 var(--main-color);
+
+  --transition: 0.3s ease;
+  
+  --background-gradient-right: 
+    repeating-linear-gradient(to right,
+    rgb(0 0 0 / 0%) 0,
+    #000 2px,
+    rgb(0 0 0 / 0%) 4px
+  );
+  --background-gradient-linear: 
+    linear-gradient(to bottom,#007f0c, #004306);
+  --background-gradient-bottom: 
+    repeating-linear-gradient(to bottom,
+    rgb(0 0 0 / 0%) 0,
+    #000 2px,
+    rgb(0 0 0 / 0%) 4px
+  );
+}
+
+@media(prefers-color-scheme:dark) {
+  :root {
+    --main-color: #00CC14;
+    --accent-color: #000;
+    --text-outline: var(--accent-color);
+    --opacity: 0.6;
+    --main-color-button: var(--main-color);
+
+    --contour-color: var(--main-color);
+    --main-body-color: var(--accent-color);
+    --core-color: var(--accent-color);
+    --sparks-color: #FF0000;
+    --color-footer-svg: var(--main-body-color);
+
+    --maif-fonts: "PressStart2P";
+    --accent-fonts: "Inter-Variable";
+    --weight-text: 465;
+    --weight-text-title: 785;
+
+    --container-width: 700px;
+
+    --border: 2px solid var(--main-color);
+    --shadow: 2px 2px 0 0 var(--main-color);
+
+    --transition: 0.3s ease;
+
+    --background-gradient-right: 
+    repeating-linear-gradient(to right,
+    rgb(0 0 0 / 0%) 0,
+    #000 2px,
+    rgb(0 0 0 / 0%) 4px
+  );
+  --background-gradient-linear: 
+    linear-gradient(to bottom,#007f0c, #004306);
+  --background-gradient-bottom: 
+    repeating-linear-gradient(to bottom,
+    rgb(0 0 0 / 0%) 0,
+    #000 2px,
+    rgb(0 0 0 / 0%) 4px
+  );
+}
+}
